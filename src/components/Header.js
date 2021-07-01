@@ -10,21 +10,24 @@ import SocialMedia from "./SocialMedia"
 import styled from "styled-components"
 
 const Header = () => {
+  // Check if window is defined (so if in the browser or in node.js)
+  const isBrowser = typeof window !== "undefined"
+
   const [isOpen, setOpen] = useState(false)
   const [showHeader, setShowHeader] = useState(true)
-  const [prevScrollPos, setPrevScrollPos] = useState(window.pageYOffset)
+  const [prevScrollPos, setPrevScrollPos] = useState()
 
-  const controlHeader = useCallback(
-    () => {
-      const currentScrollPos = window.pageYOffset
-      const visible = prevScrollPos > currentScrollPos
-      setPrevScrollPos(currentScrollPos)
-      setShowHeader(visible)
-    },
-    [prevScrollPos],
-  )
+  const controlHeader = useCallback(() => {
+    const currentScrollPos = window.pageYOffset
+    const visible = prevScrollPos > currentScrollPos
+    setPrevScrollPos(currentScrollPos)
+    setShowHeader(visible)
+  }, [prevScrollPos])
 
   useEffect(() => {
+    if (isBrowser) {
+      setPrevScrollPos(window.pageYOffset)
+    }
     window.addEventListener("scroll", controlHeader)
     return () => {
       window.removeEventListener("scroll", controlHeader)

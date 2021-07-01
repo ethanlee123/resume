@@ -49,7 +49,7 @@ const AdvancedUavCard = () => {
               <Circle>
                 <StaticImage
                   className="circle-image"
-                  src="..\..\assets\images\project\background\map.jpg"
+                  src="../../assets/images/project/background/map.jpg"
                   alt="Maps background image"
                 />
               </Circle>

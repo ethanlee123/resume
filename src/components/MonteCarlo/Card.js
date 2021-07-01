@@ -49,7 +49,7 @@ const AdvancedUavCard = () => {
               <Circle>
                 <StaticImage
                   className="circle-image"
-                  src="..\..\assets\images\project\background\casino.jpg"
+                  src="../../assets/images/project/background/casino.jpg"
                   alt="Casino table background image"
                 />
               </Circle>

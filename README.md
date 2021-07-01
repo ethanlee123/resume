@@ -103,3 +103,13 @@ Looking for more guidance? Full documentation for Gatsby lives [on the website](
 Gatsby Cloud is an end-to-end cloud platform specifically built for the Gatsby framework that combines a modern developer experience with an optimized, global edge network.
 
 <!-- AUTO-GENERATED-CONTENT:END -->
+
+
+Attributions
+https://unsplash.com/photos/rSFxBGpnluw (drone in air)
+https://unsplash.com/photos/m_zmf2J063Q (yoga upside down)
+https://unsplash.com/photos/onhDEr_g29M (drone in hand)
+https://unsplash.com/photos/RFId0_7kep4 (scavenger map)
+https://unsplash.com/photos/vnpTRdmtQ30  (breathe)
+https://unsplash.com/photos/GikVY_KS9vQ (casino)
+https://unsplash.com/photos/2JvEjF0tf50 (electric)

@@ -5,22 +5,22 @@ import styled from "styled-components"
 const About = () => {
   return (
     <AboutStyle id="about">
-
-      <h1 className="heading"><span className='heading'>about</span> me</h1>
+      <h1 className="heading">
+        <span className="heading">about</span> me
+      </h1>
       <section className="left">
         <p className="text">
-        <span>Hi, my name is Ethan</span> and I enjoy combining my skills as a
-        software developper with fields such as finance, automotive, and
-        medicine.
+          <span>Hi, my name is Ethan</span> and I enjoy combining my skills as a
+          software developper with fields such as finance, automotive, and
+          medicine.
         </p>
       </section>
       <section className="middle">
         <p className="text">
-        <span>Currently, I’m a co-op student</span> with a passion for
-        entrepreneurship at BCIT’s computer systems technology program. I’m
-        looking forward to specializing in cloud computing, AI/ML, or predictive
-        analytics
-
+          <span>Currently, I’m a co-op student</span> with a passion for
+          entrepreneurship at BCIT’s computer systems technology program. I’m
+          looking forward to specializing in cloud computing, AI/ML, or
+          predictive analytics
         </p>
       </section>
 
@@ -41,10 +41,11 @@ const About = () => {
       </div>
       <section className="right">
         <p className="text">
-        <span>My interest in software</span> truly started when I was searching
-        for a competitive edge in the markets through algorithmic trading.
-        Through this, I’ve quickly developped curiousities in other fields and
-        realized the potential to drive innovation with the help of technology.
+          <span>My interest in software</span> truly started when I was
+          searching for a competitive edge in the markets through algorithmic
+          trading. Through this, I’ve quickly developped curiousities in other
+          fields and realized the potential to drive innovation with the help of
+          technology.
         </p>
       </section>
     </AboutStyle>
@@ -62,19 +63,22 @@ const AboutStyle = styled.section`
   > section {
     flex: 1 1 50%;
   }
-  div, h1 {
+  div,
+  h1 {
     flex: 1 2 auto;
   }
   > :nth-child(odd) {
     margin-right: 5%;
   }
-  .heading, span {
-    color: #6096BA;
+  .heading,
+  span {
+    color: #6096ba;
   }
   .image-container {
     width: clamp(200px, 35%, 300px);
   }
-  .profile, .hiking {
+  .profile,
+  .hiking {
     width: clamp(200px, 35%, 300px);
   }
   .image {
@@ -98,9 +102,10 @@ const AboutStyle = styled.section`
       margin: 0;
       display: flex;
     }
-    > * {
-    margin-bottom: 20px;
-  }
+    > section,
+    > div {
+      margin-bottom: 20px !important;
+    }
   }
   @media screen and (min-width: 1008px) {
   }

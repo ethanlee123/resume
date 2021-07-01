@@ -66,5 +66,8 @@ export const GlobalStyle = createGlobalStyle`
   }
   .text {
     font-size: 1.3rem;
+    @media screen and (max-width: 640px) {
+    font-size: 1.1rem;
+    }
   }
 `

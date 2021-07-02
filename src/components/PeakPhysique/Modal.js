@@ -71,14 +71,14 @@ const Modal = ({ showModal, setShowModal }) => {
                     <a
                       href="https://github.com/ethanlee123/peakphysique.git"
                       target="_blank"
-                      rel="external"
+                      rel="external noreferrer"
                     >
                       <FaGithub className="icon" />
                     </a>
                     <a
                       href="https://peak-physique-a0c48.web.app/"
                       target="_blank"
-                      rel="external"
+                      rel="external noreferrer"
                     >
                       <FaExternalLinkAlt className="icon" />
                     </a>

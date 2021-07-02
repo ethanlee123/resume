@@ -72,14 +72,14 @@ const Modal = ({ showModal, setShowModal }) => {
                     <a
                       href="https://github.com/dm-gamboa/COMP-2800-Team-BBY-04.git"
                       target="_blank"
-                      rel="external"
+                      rel="external noreferrer"
                     >
                       <FaGithub className="icon" />
                     </a>
                     <a
                       href="https://code-hunter.vercel.app/"
                       target="_blank"
-                      rel="external"
+                      rel="external noreferrer"
                     >
                       <FaExternalLinkAlt className="icon" />
                     </a>

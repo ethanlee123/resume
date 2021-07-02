@@ -7,7 +7,11 @@ import styled from "styled-components"
 const SocialMedia = () => {
   return (
     <SocialMediaStyle className="icon-links">
-      <a href="mailto:elee265@my.bcit.ca" className="email-icon">
+      <a
+        href="mailto:elee265@my.bcit.ca"
+        className="email-icon"
+        rel="noreferrer"
+      >
         <MdEmail />
       </a>
 
@@ -15,6 +19,7 @@ const SocialMedia = () => {
         href="https://github.com/ethanlee123"
         target="_blank"
         className="github-icon"
+        rel="noreferrer"
       >
         <FaGithub />
       </a>
@@ -23,6 +28,7 @@ const SocialMedia = () => {
         href="https://www.linkedin.com/in/lee-123"
         target="_blank"
         className="linkedin-icon"
+        rel="noreferrer"
       >
         <FaLinkedin />
       </a>

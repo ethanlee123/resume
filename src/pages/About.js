@@ -41,9 +41,9 @@ const About = () => {
       </div>
       <section className="right">
         <p className="text">
-          <span>My interest in software</span> truly started when I was
+          <span>My interest in software</span> started when I was
           searching for a competitive edge in the markets through algorithmic
-          trading. Through this, I’ve quickly developped curiousities in other
+          trading. During this time, I quickly developped curiousities in other
           fields and realized the potential to drive innovation with the help of
           technology.
         </p>
@@ -75,11 +75,11 @@ const AboutStyle = styled.section`
     color: #6096ba;
   }
   .image-container {
-    width: clamp(200px, 35%, 300px);
+    width: clamp(200px, 40%, 500px);
   }
   .profile,
   .hiking {
-    width: clamp(200px, 35%, 300px);
+    width: clamp(200px, 60%, 500px);
   }
   .image {
     border-left: 15px solid #92bfb1;

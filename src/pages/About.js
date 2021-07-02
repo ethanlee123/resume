@@ -94,7 +94,7 @@ const AboutStyle = styled.section`
   }
   @media screen and (max-width: 640px) {
     height: 150vh;
-    margin-bottom: 10vh;
+    margin-bottom: 15vh;
     .heading {
       text-align: center;
     }

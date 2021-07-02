@@ -38,7 +38,7 @@ const Card = () => {
         <CardStyle
           style={{ x, y, rotateX, rotateY, z: 100 }}
           drag
-          dragElastic={0.16}
+          dragElastic={0.25}
           dragConstraints={{ top: 0, left: 0, right: 0, bottom: 0 }}
           whileTap={{ cursor: "grabbing" }}
           whileDrag={{ cursor: "grabbing" }}
@@ -57,7 +57,8 @@ const Card = () => {
               <CardIcon
                 style={{ x, y, rotateX, rotateY, rotate: "-20deg", z: 10000 }}
                 drag
-                dragElastic={0.12}
+                dragElastic={0.25}
+                dragConstraints={{ top: 0, left: 0, right: 0, bottom: 0 }}
               >
                 <StaticImage
                   className="icon"

@@ -11,16 +11,16 @@ const About = () => {
       <section className="left">
         <p className="text">
           <span>Hi, my name is Ethan</span> and I enjoy combining my skills as a
-          software developper with fields such as finance, automotive, and
+          software developer with fields such as finance, automotive, and
           medicine.
         </p>
       </section>
       <section className="middle">
         <p className="text">
           <span>Currently, I’m a co-op student</span> with a passion for
-          entrepreneurship at BCIT’s computer systems technology program. I’m
+          entrepreneurship and technology at BCIT’s computer systems technology program. I’m
           looking forward to specializing in cloud computing, AI/ML, or
-          predictive analytics
+          predictive analytics.
         </p>
       </section>
 
@@ -43,7 +43,7 @@ const About = () => {
         <p className="text">
           <span>My interest in software</span> started when I was
           searching for a competitive edge in the markets through algorithmic
-          trading. During this time, I quickly developped curiousities in other
+          trading. During this time, I quickly developed curiousities in other
           fields and realized the potential to drive innovation with the help of
           technology.
         </p>

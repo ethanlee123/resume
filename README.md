@@ -1,7 +1,7 @@
 <!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
 <p align="center">
-  <a href="https://www.gatsbyjs.com">
-    <img alt="Gatsby" src="https://www.gatsbyjs.com/Gatsby-Monogram.svg" width="60" />
+  <a href="https://ethan-lee.netlify.app/">
+    <img alt="Gatsby" src="./src/assets/resume/el-logo.jpeg" width="100" />
   </a>
 </p>
 <h1 align="center">

@@ -129,6 +129,7 @@ const Nav = styled.nav`
     }
     .logo {
       text-decoration: none;
+      color: #000;
       z-index: 99999;
       border: 2px solid #000;
       padding: 15px;

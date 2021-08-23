@@ -25,7 +25,7 @@ This development process began with mockups designed in Figma, while also learni
 
 ## Attributions
 ***
-* [Breathe background image](https://unsplash.com/photos/vnpTRdmtQ30) by Tim Goedhart [Unsplash License](https://unsplash.com/license)
+* [Lamp background image](https://unsplash.com/photos/pxoZSTdAzeU) by Pierre Châtel-Innocenti [Unsplash License](https://unsplash.com/license)
 * [Electric car charger](https://unsplash.com/photos/2JvEjF0tf50) by Andrew Roberts [Unsplash License](https://unsplash.com/license)
 * [Drone in hand](https://unsplash.com/photos/onhDEr_g29M) by Jonathan Chng [Unsplash License](https://unsplash.com/license)
 * [Mountains Advanced Uav card](https://unsplash.com/photos/fNClQ4pRlaE) by Caspar Camille Rubin [Unsplash License](https://unsplash.com/license)

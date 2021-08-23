@@ -1,4 +1,4 @@
-import React from "react"
+import React, {useEffect} from "react"
 import { GrClose } from "react-icons/gr"
 import { FaGithub, FaExternalLinkAlt } from "react-icons/fa"
 import Python from "../../assets/images/python.svg"
@@ -19,6 +19,12 @@ import {
 } from "../ModalStyle"
 
 const Modal = ({ showModal, setShowModal }) => {
+  const html = document.querySelector('html')
+
+  useEffect(() => {
+    showModal ? (html.style.overflow = 'hidden') : (html.style.overflow = 'visible')
+  }, [showModal])
+
   return (
     <>
       {showModal ? (

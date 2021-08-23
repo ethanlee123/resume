@@ -1,4 +1,4 @@
-import React from "react"
+import React, {useEffect} from "react"
 import { GrClose } from "react-icons/gr"
 import { FaGithub, FaExternalLinkAlt } from "react-icons/fa"
 import Expressjs from "../../assets/images/expressjs.svg"
@@ -33,6 +33,11 @@ import {
 
 const Modal = ({ showModal, setShowModal }) => {
   SwiperCore.use([Navigation, Pagination, Scrollbar, A11y, Autoplay])
+  const html = document.querySelector('html')
+
+  useEffect(() => {
+    showModal ? (html.style.overflow = 'hidden') : (html.style.overflow = 'visible')
+  }, [showModal])
 
   const { allFile } = useStaticQuery(graphql`
     query {

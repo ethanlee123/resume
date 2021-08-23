@@ -106,7 +106,7 @@ const Home = ({ data }) => {
 
 export const query = graphql`
   query Banner {
-    banner: file(relativePath: { eq: "images/breathe.jpg" }) {
+    banner: file(relativePath: { eq: "images/lamp.jpg" }) {
       childImageSharp {
         gatsbyImageData(layout: CONSTRAINED, quality: 90)
       }

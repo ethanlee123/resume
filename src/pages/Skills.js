@@ -27,9 +27,9 @@ const Skills = () => {
       >
         <SwiperSlide className="slide skills" key="skills">
           <h1 className="heading">My <span>Skills</span></h1>
-          <h4>Proficiency</h4>
+          {/* <h4>Proficiency</h4> */}
 
-          <div className="rectangle"></div>
+          {/* <div className="rectangle"></div> */}
 
           <div className="programming-left">
             <Java className="java" />
@@ -81,7 +81,7 @@ const SkillsStyle = styled.div`
       color: #fff;
       opacity: 0.5;
     }
-    .rectangle {
+    /* .rectangle {
       grid-area: rectangle;
       transform: rotate(90deg);
       width: 25vh;
@@ -89,7 +89,7 @@ const SkillsStyle = styled.div`
       align-self: flex-start;
       position: relative;
       top: 35%;
-    }
+    } */
     .programming-left {
       text-align: right;
       grid-area: programmingleft;

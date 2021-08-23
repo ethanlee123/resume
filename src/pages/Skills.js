@@ -1,7 +1,6 @@
 import React from "react"
 import styled from "styled-components"
 
-
 // import Swiper core and required modules
 import { Swiper, SwiperSlide } from "swiper/react"
 import "swiper/swiper-bundle.css"
@@ -21,26 +20,21 @@ import Python from "../assets/images/python.svg"
 
 const Skills = () => {
   return (
-    <SkillsStyle id='skills'>
-      <Swiper
-        spaceBetween={50}
-      >
+    <SkillsStyle id="skills">
+      <Swiper spaceBetween={50}>
         <SwiperSlide className="slide skills" key="skills">
-          <h1 className="heading">My <span>Skills</span></h1>
-          {/* <h4>Proficiency</h4> */}
-
-          {/* <div className="rectangle"></div> */}
-
+          <h1 className="working">I'm working with ...</h1>
           <div className="programming-left">
             <Java className="java" />
             <Flutter className="flutter" />
-            <Javascript className="javascript" />
             <MySQL className="mysql" />
             <Firebase className="firebase" />
             <MongoDb className="mongodb" />
             <Python className="python" />
           </div>
+          <h1 className="worked">I've worked with ...</h1>
           <div className="programming-right">
+            <Javascript className="javascript" />
             <Html5 className="html5" />
             <Css3 className="css3" />
             <ReactIcon className="react-icon" />
@@ -65,36 +59,35 @@ const SkillsStyle = styled.div`
     height: 45vh;
     display: grid;
     grid-template:
-      "myskills myskills myskills" 10%
-      "proficiency proficiency proficiency" 10%
-      "programmingleft rectangle programmingright" 80%
-      / 40% 10% 40%;
+      "working worked" 10%
+      "programmingleft programmingright" 80%
+      / 50% 50%;
     justify-content: center;
     justify-items: center;
     align-items: center;
+    .working {
+      grid-area: working;
+    }
+    .worked {
+      grid-area: worked;
+    }
     h1 {
-      grid-area: myskills;
       color: #fff;
+      @media screen and (max-width: 640px) {
+        font-size: 12pt;
+      }
     }
     h4 {
       grid-area: proficiency;
       color: #fff;
       opacity: 0.5;
     }
-    /* .rectangle {
-      grid-area: rectangle;
-      transform: rotate(90deg);
-      width: 25vh;
-      display: flex;
-      align-self: flex-start;
-      position: relative;
-      top: 35%;
-    } */
     .programming-left {
-      text-align: right;
+      text-align: center;
       grid-area: programmingleft;
     }
     .programming-right {
+      text-align: center;
       grid-area: programmingright;
     }
     .programming-left,
@@ -123,8 +116,11 @@ const SkillsStyle = styled.div`
   .mysql {
     width: 100px;
   }
-  .expressjs, .html5, .css3, .python {
-    fill: #EBEBEB;
+  .expressjs,
+  .html5,
+  .css3,
+  .python {
+    fill: #ebebeb;
   }
 `
 

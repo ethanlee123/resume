@@ -33,10 +33,12 @@ import {
 
 const Modal = ({ showModal, setShowModal }) => {
   SwiperCore.use([Navigation, Pagination, Scrollbar, A11y, Autoplay])
-  const html = document.querySelector('html')
 
   useEffect(() => {
-    showModal ? (html.style.overflow = 'hidden') : (html.style.overflow = 'visible')
+    if (typeof document !== "undefined") {
+      const html = document.querySelector('html')
+      showModal ? (html.style.overflow = 'hidden') : (html.style.overflow = 'visible')
+    }
   }, [showModal])
 
   const { allFile } = useStaticQuery(graphql`

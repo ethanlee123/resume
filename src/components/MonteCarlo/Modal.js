@@ -19,10 +19,12 @@ import {
 } from "../ModalStyle"
 
 const Modal = ({ showModal, setShowModal }) => {
-  const html = document.querySelector('html')
 
   useEffect(() => {
-    showModal ? (html.style.overflow = 'hidden') : (html.style.overflow = 'visible')
+    if (typeof document !== "undefined") {
+      const html = document.querySelector('html')
+      showModal ? (html.style.overflow = 'hidden') : (html.style.overflow = 'visible')
+    }
   }, [showModal])
 
   return (

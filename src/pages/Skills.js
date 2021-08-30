@@ -25,21 +25,22 @@ const Skills = () => {
         <SwiperSlide className="slide skills" key="skills">
           <h1 className="working">I'm working with ...</h1>
           <div className="programming-left">
-            <Java className="java" />
-            <Flutter className="flutter" />
-            <MySQL className="mysql" />
-            <Firebase className="firebase" />
-            <MongoDb className="mongodb" />
-            <Python className="python" />
+            <p>java</p>
+            <p>flutter</p>
+            <p>dart</p>
+            <p>mysql</p>
+            <p>firebase</p>
+            <p>mongodb</p>
+            <p>python</p>
           </div>
           <h1 className="worked">I've worked with ...</h1>
           <div className="programming-right">
-            <Javascript className="javascript" />
-            <Html5 className="html5" />
-            <Css3 className="css3" />
-            <ReactIcon className="react-icon" />
-            <ExpressJs className="expressjs" />
-            <NodeJs className="nodejs" />
+            <p>javascript</p>
+            <p>html 5</p>
+            <p>css 3</p>
+            <p>react</p>
+            <p>expressjs</p>
+            <p>nodejs</p>
           </div>
         </SwiperSlide>
       </Swiper>
@@ -92,6 +93,7 @@ const SkillsStyle = styled.div`
     }
     .programming-left,
     .programming-right {
+      margin-top: 50px;
       height: 100%;
       overflow-y: scroll;
       scrollbar-width: none; /* for Firefox */
@@ -99,28 +101,11 @@ const SkillsStyle = styled.div`
         display: none; /* for Chrome, Safari, and Opera */
       }
     }
-  }
-
-  .text {
-    text-align: center;
-  }
-  .css3,
-  .javascript {
-    height: 50px;
-    width: 50px;
-  }
-  .pandas {
-    height: 70px;
-    width: 100px;
-  }
-  .mysql {
-    width: 100px;
-  }
-  .expressjs,
-  .html5,
-  .css3,
-  .python {
-    fill: #ebebeb;
+    p {
+      margin-top: 5%;
+      color: #fff;
+      font-size: 16pt;
+    }
   }
 `
 

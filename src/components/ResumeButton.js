@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from "styled-components"
-import resume from '../assets/resume/ethanlee_online_resume.pdf'
+import resume from '../assets/resume/ethan_lee_online_resume.pdf'
 
 const ResumeButton = () => {
   return (

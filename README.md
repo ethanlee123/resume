@@ -1,6 +1,6 @@
 <!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
 <p align="center">
-  <a href="https://ethan-lee.netlify.app/">
+  <a href="https://ethanlee123.netlify.app/">
     <img alt="Gatsby" src="./src/assets/resume/el-logo.jpeg" width="100" />
   </a>
 </p>

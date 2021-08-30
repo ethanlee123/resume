@@ -8,7 +8,7 @@
   Responsive Portfolio Website
 </h1>
 
-Thank you for checking out this github repo of my responsive portfolio website! Follow this link see the finished product: <a href='https://ethan-lee.netlify.app/'>https://ethan-lee.netlify.app/</a> 
+Thank you for checking out this github repo of my responsive portfolio website! Follow this link see the finished product: <a href='https://ethanlee123.netlify.app/'>https://ethanlee123.netlify.app/</a> 
 
 ## General Info
 ***

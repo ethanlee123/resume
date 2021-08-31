@@ -95,7 +95,7 @@ console.log(allFile)
                 </div>
                 <p>
                   Status: <ColoredText>complete</ColoredText> | Role:{" "}
-                  <ColoredText> Data Science</ColoredText>
+                  <ColoredText> Data Science (Personal)</ColoredText>
                 </p>
                 <p>
                   01 / 2020 - 01 / 2020 | <ColoredText>Personal</ColoredText>

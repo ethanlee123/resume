@@ -94,7 +94,7 @@ const Modal = ({ showModal, setShowModal }) => {
                 </div>
                 <p>
                   Status: <ColoredText>complete</ColoredText> | Role:{" "}
-                  <ColoredText>Project Manager/Full Stack Dev</ColoredText>
+                  <ColoredText>Project Manager/Full Stack Dev (Group)</ColoredText>
                 </p>
                 <p>
                   04 / 2021 - 05 / 2021 | <ColoredText>Academic</ColoredText>

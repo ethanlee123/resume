@@ -49,7 +49,7 @@ const Modal = ({ showModal, setShowModal }) => {
                 </div>
                 <p>
                   Status: <ColoredText>ongoing</ColoredText> | Role:{" "}
-                  <ColoredText>Mobile Developer</ColoredText>
+                  <ColoredText>Mobile Developer (Personal)</ColoredText>
                 </p>
                 <p>
                   06 / 2021 - present | <ColoredText>Personal</ColoredText>

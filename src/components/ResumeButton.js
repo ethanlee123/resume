@@ -6,7 +6,7 @@ const ResumeButton = () => {
   return (
     <ResumeBtnStyle>
       <a href={resume} target='_blank' rel='noreferrer'>
-      <button className="resume button">Resume</button>
+      <button className="resume button">RESUME</button>
       </a>
     </ResumeBtnStyle>
   )

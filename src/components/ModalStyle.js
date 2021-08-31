@@ -63,7 +63,11 @@ export const ProjectMeta = styled.section`
   }
 `
 export const ProjectVision = styled.section``
-export const ProjectFeatures = styled.section``
+export const ProjectFeatures = styled.section`
+  ul {
+    margin-bottom: 20px;
+  }
+`
 export const ProjectViewables = styled.section`
   .swiper-container {
     width: 100%;

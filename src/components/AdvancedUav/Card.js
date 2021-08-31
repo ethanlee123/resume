@@ -68,7 +68,8 @@ const Card = () => {
               </CardIcon>
             </CardIconWrapper>
             <CardTitle>
-              advanced <ColoredText>uav</ColoredText>
+              {/* advanced <ColoredText>uav</ColoredText> */}
+              drone delivery and automation
             </CardTitle>
           </TopContainer>
           <BottomContainer>

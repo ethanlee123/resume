@@ -71,7 +71,7 @@ const Modal = ({ showModal, setShowModal }) => {
             <ModalContent>
               <ProjectMeta>
                 <div>
-                  <h1>Advanced uav</h1>
+                  <h1>flightclub</h1>
                   <div className="externals">
                     <a
                       href="https://github.com/ethanlee123/flightclub"
@@ -98,8 +98,7 @@ const Modal = ({ showModal, setShowModal }) => {
                 </p>
                 <p>
                   This UAV can fly autonomously to a waypoint specified by the
-                  user drop off location. It has a payload capacity of 4.9 lbs
-                  but can easily be increased by spending more cash!
+                  user drop off location.
                 </p>
               </ProjectVision>
               <ProjectFeatures>
@@ -112,7 +111,8 @@ const Modal = ({ showModal, setShowModal }) => {
                     Raspberry Pi 3 model b+.
                   </li>
                   <li>Python script automates the drone flying process.</li>
-                  <li></li>
+                  <li> It has a payload capacity of 4.9 lbs
+                  but can easily be increased by spending more cash!</li>
                 </ul>
                 <h2>How does it work?</h2>
                 <ul>

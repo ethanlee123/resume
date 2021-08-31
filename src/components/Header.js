@@ -15,24 +15,6 @@ const Header = () => {
 
   const [isOpen, setOpen] = useState(false)
   const [showHeader, setShowHeader] = useState(true)
-  // const [prevScrollPos, setPrevScrollPos] = useState()
-
-  // const controlHeader = useCallback(() => {
-  //   const currentScrollPos = window.pageYOffset
-  //   const visible = prevScrollPos > currentScrollPos
-  //   setPrevScrollPos(currentScrollPos)
-  //   setShowHeader(visible)
-  // }, [prevScrollPos])
-
-  // useEffect(() => {
-  //   if (isBrowser) {
-  //     setPrevScrollPos(window.pageYOffset)
-  //   }
-  //   window.addEventListener("scroll", controlHeader)
-  //   return () => {
-  //     window.removeEventListener("scroll", controlHeader)
-  //   }
-  // }, [controlHeader])
 
   const handleOpen = () => {
     setOpen(!isOpen)
@@ -139,6 +121,9 @@ const Nav = styled.nav`
       box-shadow: 3px 3px 5px 1px #ccc; /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
       font-weight: 800;
     }
+    // header shadow and blur
+    background: #eee;
+  box-shadow: 0 8px 20px -4px lightblue;
   }
 `
 

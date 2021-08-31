@@ -14,7 +14,7 @@ export const Background = styled.div`
 `
 export const ModalWrapper = styled.div`
   width: clamp(300px, 80vw, 750px);
-  height: 80vh;
+  height: 83vh;
   box-shadow: 0 5px 16px rgba(0, 0, 0, 0.2);
   background-color: #fff;
   border-radius: 25px;
@@ -23,6 +23,7 @@ export const ModalWrapper = styled.div`
   justify-content: center;
   background-color: #ebebeb;
   overflow: hidden;
+  margin-top: 3rem;
 `
 export const ModalContent = styled.div`
   width: 90%;

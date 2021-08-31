@@ -1,9 +1,22 @@
-import React, {useEffect} from "react"
+import React, { useEffect } from "react"
 import { GrClose } from "react-icons/gr"
 import { FaGithub, FaExternalLinkAlt } from "react-icons/fa"
 import Python from "../../assets/images/python.svg"
 import Pandas from "../../assets/images/pandas.svg"
 import Matplotlib from "../../assets/images/matplotlib.svg"
+import Numpy from "../../assets/images/numpy.svg"
+
+import { useStaticQuery, graphql } from "gatsby"
+import { GatsbyImage, getImage } from "gatsby-plugin-image"
+import SwiperCore, {
+  Navigation,
+  Pagination,
+  Scrollbar,
+  A11y,
+  Autoplay,
+} from "swiper"
+import { Swiper, SwiperSlide } from "swiper/react"
+import "swiper/swiper-bundle.css"
 
 import {
   Background,
@@ -19,14 +32,39 @@ import {
 } from "../ModalStyle"
 
 const Modal = ({ showModal, setShowModal }) => {
+  SwiperCore.use([Navigation, Pagination, Scrollbar, A11y, Autoplay])
 
+  const { allFile } = useStaticQuery(graphql`
+    query {
+      allFile(
+        filter: { relativePath: { regex: "images/project/MonteCarlo/" } }
+      ) {
+        nodes {
+          childImageSharp {
+            gatsbyImageData(
+              layout: CONSTRAINED
+              placeholder: BLURRED
+              quality: 10
+              width: 250
+            )
+          }
+        }
+      }
+    }
+  `)
+  
   useEffect(() => {
     if (typeof document !== "undefined") {
-      const html = document.querySelector('html')
-      showModal ? (html.style.overflow = 'hidden') : (html.style.overflow = 'visible')
+      const html = document.querySelector("html")
+      showModal
+        ? (html.style.overflow = "hidden")
+        : (html.style.overflow = "visible")
     }
+
   }, [showModal])
 
+
+console.log(allFile)
   return (
     <>
       {showModal ? (
@@ -44,9 +82,15 @@ const Modal = ({ showModal, setShowModal }) => {
                 <div>
                   <h1>MonteCarlo Simulation</h1>
                   <div className="externals">
-                    <FaGithub className="icon icon-disabled" />
-
-                    <FaExternalLinkAlt className="icon icon-disabled" />
+                    <div className="externals">
+                    <a
+                      href="https://github.com/ethanlee123/monte_carlo"
+                      target="_blank"
+                      rel="external noreferrer"
+                    >
+                      <FaGithub className="icon" />
+                    </a>
+                  </div>
                   </div>
                 </div>
                 <p>
@@ -60,9 +104,7 @@ const Modal = ({ showModal, setShowModal }) => {
               <ProjectVision>
                 <h2>Vision</h2>
                 <p>
-                  Calculates the optimal stock portfolio weights of a select
-                  stocks for a given time based on the Sharpe ratio derived from
-                  historical data.
+                  A data science project which utilizez python to optimize a portfolio according to the modern portfolio theory.
                 </p>
               </ProjectVision>
               <ProjectFeatures>
@@ -76,10 +118,28 @@ const Modal = ({ showModal, setShowModal }) => {
                     Displays a graph with an 'efficient frontier' which shows
                     the expected return for a given standard deviation.
                   </li>
+                  <li>
+                    Returns the porfolio weighting for risk tolerant and risk averse investors.
+                  </li>
                 </ul>
               </ProjectFeatures>
               <ProjectViewables>
-                <p>Photos coming soon...</p>
+                <Swiper
+                  slidesPerView={2}
+                  pagination={{ clickable: true, type: "progressbar" }}
+                  autoplay={true}
+                >
+                  {allFile.nodes.map(node => {
+                    return (
+                      <SwiperSlide>
+                        <GatsbyImage
+                          image={getImage(node.childImageSharp)}
+                          alt="project image"
+                        />
+                      </SwiperSlide>
+                    )
+                  })}
+                </Swiper>
               </ProjectViewables>
               <ProjectTechnologies>
                 <h2>Technologies</h2>
@@ -87,6 +147,7 @@ const Modal = ({ showModal, setShowModal }) => {
                   <Python className="python" />
                   <Pandas className="pandas" />
                   <Matplotlib className="matplotlib" />
+                  <Numpy className="numpy" />
                 </div>
               </ProjectTechnologies>
             </ModalContent>

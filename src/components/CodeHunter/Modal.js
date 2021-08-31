@@ -52,7 +52,7 @@ const Modal = ({ showModal, setShowModal }) => {
               layout: CONSTRAINED
               placeholder: BLURRED
               quality: 10
-              width: 200
+              width: 250
             )
           }
         }

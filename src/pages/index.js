@@ -169,7 +169,6 @@ const Index = styled.section`
           opacity: 1;
         }
         transition: all 290ms ease-in-out;
-
       }
     }
     .arrow-down {

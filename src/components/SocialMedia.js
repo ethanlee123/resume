@@ -41,6 +41,10 @@ const SocialMediaStyle = styled.div`
   display: flex;
   * {
     fill: #904e55;
+    transition: all 290ms ease-in-out;
+    :hover {
+      color: #904E55; 
+    }
     :hover {
       fill: #fff;
     }

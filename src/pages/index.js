@@ -160,7 +160,6 @@ const Index = styled.section`
       display: flex;
       flex-direction: column;
       h2 {
-        /* font-size: 4rem; */
         margin-bottom: 20px;
         opacity: 0.5;
         :nth-child(1) {
@@ -169,6 +168,8 @@ const Index = styled.section`
         :hover {
           opacity: 1;
         }
+        transition: all 290ms ease-in-out;
+
       }
     }
     .arrow-down {
